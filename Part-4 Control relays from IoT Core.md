@@ -154,8 +154,9 @@ void controlRelays(String message) {
     Serial.println("Relay 4 is OFF");
   }
 }
+```
 
-Step 3: Publish Control Messages from AWS IoT Core
+# Step 3: Publish Control Messages from AWS IoT Core
 
 To control the relays, you can send commands to the home/automation/control topic from the AWS IoT Core console or via an application.
 
@@ -178,7 +179,7 @@ To turn Relay 4 ON: RELAY4_ON
 To turn Relay 4 OFF: RELAY4_OFF
 
 
-Step 4: Testing the Control Functionality
+# Step 4: Testing the Control Functionality
 
 1. Upload the Updated Code: Make sure to upload the updated ESP32 code with relay control functionality.
 
@@ -194,13 +195,4 @@ Publish relay control commands (e.g., RELAY1_ON).
 
 
 
-4. Observe the Changes: You should see the corresponding relay turning ON or OFF as per the command sent, along with the serial output indicating the relay's state.
-
-
-
-Conclusion
-
-You have successfully set up relay control using your ESP32 with AWS IoT Core! You can extend this further by adding more devices and functionalities. If you have any specific requirements or questions, feel free to ask!
-
-You can copy and paste this Markdown code directly into your Markdown editor or documentation platform. Let me know if you need any further adjustments!
-
+4. Observe the Changes: You should see the corresponding relay turning ON or OFF as per the command sent, along with the serial output indicating the relay's.
