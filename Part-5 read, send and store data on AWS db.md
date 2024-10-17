@@ -3,7 +3,7 @@ To read, store, and manage data from sensors connected to an ESP32 and store it 
 
 ---
 
-Step 1: Connect Sensors to ESP32
+## Step 1: Connect Sensors to ESP32
 
 1. Hardware Setup:
 
@@ -37,7 +37,7 @@ PubSubClient.h for MQTT communication with AWS IoT Core.
 
 ---
 
-Step 2: Set Up AWS IoT Core
+## Step 2: Set Up AWS IoT Core
 
 1. Create an IoT Thing in AWS:
 
@@ -72,7 +72,7 @@ Attach this policy to the certificate of your ESP32 Thing.
 
 ---
 
-Step 3: Write ESP32 Code to Send Data to AWS IoT Core
+## Step 3: Write ESP32 Code to Send Data to AWS IoT Core
 
 1. Connect ESP32 to Wi-Fi:
 
@@ -91,7 +91,7 @@ Write code to read sensor values from the connected sensors (DHT11, LDR, MQ-2, e
 Use MQTT to publish the sensor data to AWS IoT Core.
 
 
-Example code to send data from the ESP32:
+```
 
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -181,10 +181,10 @@ void reconnect() {
 
 
 
-
+```
 ---
 
-Step 4: Create DynamoDB Table to Store Sensor Data
+## Step 4: Create DynamoDB Table to Store Sensor Data
 
 1. Create DynamoDB Table:
 
@@ -224,9 +224,9 @@ Map the sensorId and timestamp fields accordingly.
 
 ---
 
-Step 5: Process and Store Data in AWS DynamoDB
+## Step 5: Process and Store Data in AWS DynamoDB
 
-1. AWS Lambda (Optional):
+1. AWS Lambda:
 
 If additional processing is required, you can trigger an AWS Lambda function from the IoT Rule to process the data before saving it in DynamoDB.
 
