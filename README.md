@@ -192,6 +192,3 @@ This document outlines the steps for developing a Smart Home Automation system u
 
 The Smart Home Automation project combines the capabilities of the ESP32 microcontroller with the power of AWS Cloud services, providing a robust and scalable solution for home automation. By following the steps outlined above, you can successfully deploy a fully functional smart home system that can send SMS and email alerts based on real-time data.
 
----
-
-Feel free to customize this document further based on your specific requirements or add any additional details related to your project. If you need more information or adjustments, just let me know!
